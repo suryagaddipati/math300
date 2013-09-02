@@ -1,8 +1,9 @@
 # Latex files
-*.fdb_latexmk 
+*.fdb_latexmk
+*.brf
+*.fls
 *.nav 
 *.snm 
-*.fls 
 *.aux
 *.glo
 *.idx
