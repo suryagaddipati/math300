@@ -1,20 +1,58 @@
-1.  Level one heading
-    -   a bullet point
-    -   also a bullet point
-    -   yet a third way of writing a bullet point
-    -   pick your poison!
 
-2.  With numbered lists Pandoc will figure out the correct numbering for
-    you
-    -   Isn't that cool?
+---
+layout: post
+title: 'Hello World'
+date: 2013-09-02 12:56
+comments: true
+categories: 
+---
+Hi, This a demo post of [Logdown](http://logdown.com). 
 
-3.  You can mix math inline
-    *x*<sup>2</sup> + *y*<sup>2</sup> = *z*<sup>2</sup> or in display
-    mode:
-    \$
-        \\frac{a}{b} = \\frac{c}{d} + \\frac{e}{f}
-        \$
+Logdown use Markdown as main syntax, you can find more example by reading this [document on Wikipedia](http://en.wikipedia.org/wiki/Markdown)
 
-4.  You can mix styles
-    1.  sublist with alphabetical
-    2.  nice, eh?
+Logdown also support drag & drop image uploading ( required Beta / Premium membership). The picture syntax is like this:
+
+![](http://logdown.com/images/logo.png)
+
+## Bloging with code snippet:
+
+`inline code`
+
+### Plain Code
+
+```
+puts "Hello World!"
+```
+
+### Code with Language
+
+```ruby
+puts "Hello World!"
+```
+
+### Code with Title
+
+```ruby hello_world.rb
+puts "Hello World!"
+```
+
+
+## MathJax Example
+
+### Mathjax
+
+```mathjax
+x = \dfrac{-b \pm \sqrt{b^2 - 4ac}}{2a}
+```
+
+### Inline Mathjax
+
+The answser is `$a^2 + b^2 = c^2$`.
+
+## Table Example
+
+| Tables        | Are           | Cool  |
+| ------------- |:-------------:| -----:|
+| col 1         | Hello         | $1600 |
+| col 2         | Hello         |   $12 |
+| col 3         | Hello         |    $1 |
