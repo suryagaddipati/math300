@@ -1,58 +1,67 @@
+\\documentclass[12pt]{article}\
+\\usepackage{amsmath, amssymb,amscd}\
+\\usepackage{xypic}\
+\\usepackage{setspace}\
+\\usepackage{enumerate}\
+\\pagestyle{empty}\
+\\setlength{\\parindent}{0in}\
+\\oddsidemargin 0in\
+\\textwidth 6.25in\
+\\topmargin 0in\
+\\textheight 9in\
+\\doublespace\
+\\usepackage{amsthm}
 
----
-layout: post
-title: 'Hello World'
-date: 2013-09-02 12:56
-comments: true
-categories: 
----
-Hi, This a demo post of [Logdown](http://logdown.com). 
+\\begin{document}
 
-Logdown use Markdown as main syntax, you can find more example by reading this [document on Wikipedia](http://en.wikipedia.org/wiki/Markdown)
+Surya Gaddipati\\\
+September 1, 2013\\\
+MATH 300
 
-Logdown also support drag & drop image uploading ( required Beta / Premium membership). The picture syntax is like this:
+\\newtheorem\*{KL}{Theorem }
 
-![](http://logdown.com/images/logo.png)
+\\begin{KL}\
+ \$\\sqrt 2\$ is irrational\
+\\end{KL}\
+\\begin{proof}\
+ Lets assume that \$\\sqrt 2\$ is rational, meaning it can be expressed
+as\
+ \\begin{equation}\
+ \\sqrt{2} = \\frac{a}{b}\
+ \\end{equation}
 
-## Bloging with code snippet:
+where \$a\$ and \$b\$ are real numbers.\\\
+ This implies,\
+ \\begin{equation}\
+ 2 = \\frac{a\^2}{b\^2}\
+ \\end{equation}\
+ \\begin{equation}\\label{eq:solve}\
+ 2b\^2 = a\^2\
+ \\end{equation}
 
-`inline code`
+Thus \$a\^2\$ is an even number which means \$a\$ is an even number,
+since squares of even numbers are even numbers.\
+ Since \$a\$ is an even number there exists a number \$c\$ such that\
+ \\begin{equation}\
+ a= 2c\
+ \\end{equation}
 
-### Plain Code
+Substituting, \$c\$ in \~\\ref{eq:solve} we get
 
-```
-puts "Hello World!"
-```
+\\begin{equation}\
+ 2b\^2 = (2c)\^2\
+ \\end{equation}\
+ \\begin{equation}\
+ 2b\^2 = 4c\^2\
+ \\end{equation}\
+ \\begin{equation}\\label{eq:biseven}\
+ b\^2 = 2c\^2\
+ \\end{equation}\
+ Equation \~\\ref{eq:biseven} implies that \$b\$ is an even number too.
+This means that \$a\$ and \$b\$ have a common factor of \$2\$, but \$a\$
+and \$b\$ shouldn't have any common factors.\\\
+ We have a contradiction. Hence \$\\sqrt 2\$ is irrational.
 
-### Code with Language
+\\end{proof}
 
-```ruby
-puts "Hello World!"
-```
-
-### Code with Title
-
-```ruby hello_world.rb
-puts "Hello World!"
-```
-
-
-## MathJax Example
-
-### Mathjax
-
-```mathjax
-x = \dfrac{-b \pm \sqrt{b^2 - 4ac}}{2a}
-```
-
-### Inline Mathjax
-
-The answser is `$a^2 + b^2 = c^2$`.
-
-## Table Example
-
-| Tables        | Are           | Cool  |
-| ------------- |:-------------:| -----:|
-| col 1         | Hello         | $1600 |
-| col 2         | Hello         |   $12 |
-| col 3         | Hello         |    $1 |
+\\end{document}
