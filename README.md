@@ -1,1 +1,1 @@
-latexmk -pdf -pvc mainfilename
+latexmk -pdf -pvc  -interaction=nonstopmode
