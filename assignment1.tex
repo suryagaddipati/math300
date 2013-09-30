@@ -1,0 +1,67 @@
+\\documentclass[12pt]{article}\
+\\usepackage{amsmath, amssymb,amscd}\
+\\usepackage{xypic}\
+\\usepackage{setspace}\
+\\usepackage{enumerate}\
+\\pagestyle{empty}\
+\\setlength{\\parindent}{0in}\
+\\oddsidemargin 0in\
+\\textwidth 6.25in\
+\\topmargin 0in\
+\\textheight 9in\
+\\doublespace\
+\\usepackage{amsthm}
+
+\\begin{document}
+
+Surya Gaddipati\\\
+September 1, 2013\\\
+MATH 300
+
+\\newtheorem\*{KL}{Theorem }
+
+\\begin{KL}\
+ \$\\sqrt 2\$ is irrational\
+\\end{KL}\
+\\begin{proof}\
+ Lets assume that \$\\sqrt 2\$ is rational, meaning it can be expressed
+as\
+ \\begin{equation}\
+ \\sqrt{2} = \\frac{a}{b}\
+ \\end{equation}
+
+where \$a\$ and \$b\$ are real numbers.\\\
+ This implies,\
+ \\begin{equation}\
+ 2 = \\frac{a\^2}{b\^2}\
+ \\end{equation}\
+ \\begin{equation}\\label{eq:solve}\
+ 2b\^2 = a\^2\
+ \\end{equation}
+
+Thus \$a\^2\$ is an even number which means \$a\$ is an even number,
+since squares of even numbers are even numbers.\
+ Since \$a\$ is an even number there exists a number \$c\$ such that\
+ \\begin{equation}\
+ a= 2c\
+ \\end{equation}
+
+Substituting, \$c\$ in \~\\ref{eq:solve} we get
+
+\\begin{equation}\
+ 2b\^2 = (2c)\^2\
+ \\end{equation}\
+ \\begin{equation}\
+ 2b\^2 = 4c\^2\
+ \\end{equation}\
+ \\begin{equation}\\label{eq:biseven}\
+ b\^2 = 2c\^2\
+ \\end{equation}\
+ Equation \~\\ref{eq:biseven} implies that \$b\$ is an even number too.
+This means that \$a\$ and \$b\$ have a common factor of \$2\$, but \$a\$
+and \$b\$ shouldn't have any common factors.\\\
+ We have a contradiction. Hence \$\\sqrt 2\$ is irrational.
+
+\\end{proof}
+
+\\end{document}

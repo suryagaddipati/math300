@@ -1,0 +1,49 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath, amssymb,amscd}
+\usepackage{setspace}
+\usepackage{enumerate}
+\usepackage{amsmath}
+\usepackage{ amssymb }
+\usepackage{amsthm}
+\pagestyle{empty}
+\setlength{\parindent}{0in}
+\oddsidemargin 0in
+\textwidth 6.5in
+\topmargin 0in
+\textheight 9in
+\doublespace
+
+\begin{document} 
+
+Surya Gaddipati\\
+\today\\
+MATH 300 - Monday
+\newtheorem*{KL}{Theorem }
+
+\begin{KL} 
+  Let $f$ be a function from the set of real numbers to itself. Prove that if $f$ is differentiable at a real number $c$, then $f$ is continuous at $c$.
+\end{KL}
+\begin{proof}
+  Given that $f$ is differentiable at $c$. 
+  \begin{equation}
+    \lim_{h \to 0} \dfrac { f(c+h) - f(c) } {h} 
+    \end{equation}
+exists. Let's call that $f'(c)$. 
+In order to prove that $f$ is continous function at $c$ we need to prove that $f'(c)=f(c)$.
+ \paragraph{}
+  \begin{equation}
+    \lim_{h \to 0}  f(c+h) - f(c)  =  \lim_{h \to 0} \dfrac { f(c+h) - f(c) } {h}  . h 
+    \end{equation}
+  \begin{equation}
+    \lim_{h \to 0}  f(c+h) - f(c)  =  f'(c) . h 
+    \end{equation}
+  \begin{equation}
+    \lim_{h \to 0}  f(c+h) - f(c) =   f'(c) . 0 = 0 
+    \end{equation}
+
+  \begin{equation}
+    \lim_{h \to 0}  f(c+h) =  f(c)  
+    \end{equation}
+which means that $f$ is continous at $c$.
+\end{proof}
+\end{document}
