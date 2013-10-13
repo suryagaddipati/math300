@@ -1,0 +1,41 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath, amssymb,amscd}
+\usepackage{setspace}
+\usepackage{enumerate}
+\pagestyle{empty}
+\doublespace
+\usepackage{amsthm}
+
+
+
+\begin{document} 
+
+Surya Gaddipati\\
+September 1, 2013\\
+MATH 300 
+
+\newtheorem*{KL}{Theorem }
+
+\begin{KL} 
+Given a positive integer $n$, suppose $S$ is a subset of \{$1$, $2$,...,$2n$\} with $|S| = n + 1$. Prove that there are distinct $a$,$b$ in $S$ such that $a$ divides $b$.
+\end{KL}
+\begin{proof}
+  Let $k$ be the smallest number of set $S$.\\
+  $k$ cannot be be greater than $n$ for set $S$ to contain $n+1$ elements.
+  \begin{equation}
+    k \leq n  
+  \end{equation}
+  \begin{equation}
+    k \leq n + 1
+  \end{equation}
+  Adding $k$ to both sides of the equation, we get 
+  \begin{equation}\label{eq:solve}
+    2k \leq k+ n + 1
+  \end{equation}
+
+  Equation~\ref{eq:solve} implies that smallest member of the set $k$ and $2k$ are contained in $S$ since $k+n+1$ is the largest member of $S$. Which proves the fact that $S$ contains two distinct elements $a$ and $b$ such that $a|b$ since $k|2k$. 
+
+\end{proof}
+
+\end{document}
+end{document}
