@@ -3,9 +3,19 @@
 \usepackage{fullpage}
 \usepackage{setspace}
 \usepackage{enumerate}
+\usepackage{verbatim,multicol}
 \pagestyle{empty}
+\setlength{\parindent}{0in}
+\oddsidemargin 0in
+\textwidth 6.5in
+\topmargin 0in
+\textheight 9in
 \doublespace
 
+\newcommand{\kg}{Kurt G{\"o}del }
+\newcommand{\kgs}{Kurt G{\"o}del's }
+\newcommand{\gd}{G{\"o}del }
+\newcommand{\gds}{G{\"o}del's }
 
 
 \begin{document} 
@@ -15,32 +25,70 @@
 MATH 300 - Monday
 
 \begin{center}
-  Kurt G{\"o}del
+  \kg 
 \end{center}
 
 \begin{center}
-Every chaos is merely a wrong appearence. 
+Every chaos is merely a wrong appearance. 
 \end{center}
- \paragraph{Introduction}
- Aristotle of modern times. Underrated mathematician/scientist. 
- \paragraph{Early life}
- precocious. Mental disability. Bizzare bheaviour.\\
- der Herr Warum. Hypochondriac.
- Czech - austrian - german- american. \\
- \paragraph{Air of mathematical uncertainity}
- Russells Paradox\\
- Zermelo–Fraenkel set theory\\
- Blind spots in mathematics.\\
- Nature of reality free from blind spots\\
- \paragraph{Godel's Incompletness theorem 1}
- Hilbert's program \\
- Principa Mathematica - Russell\\
+ \paragraph{}
+ \kg has been called Aristotle of modern times a genius at odds with zeitgeist. Looking back over that century in the year 2000, TIME magazine included \gd among its top 100 most influential thinkers. This essay is an attempt at an overview of life and work of this great mathematician. 
+
+ \paragraph{Born into luxury}
+ Earliest ancestry of \kg can be traced back to Carl \gd, \kg's  grandfather who lived in Br\"unn. Carl's son Rudolf who worked in the Austro Hugarian textile industry was fostered by his aunt. Rudolf married Marianne Handschuh, fourteen years his junior. Even though the marriage cannot be described as a marriage of love, the family can be described as a model family. Marianne was a sophisticated woman from attending French lycee and a model home maker, while Rudolf was a hard working and devoted father.
+ The family was a  beneficiary of industrialization of Austro Hungarian empire, \gds became a wealthy family from Rudolf's position as managing director and part owner of a major textile firm.
+ \kg was second child in the family after Kurt Friedrich. \gds were not a very religious family, although Kurt would become a theist later in life(He described himself as `theistic rather than panthiestic'.)
+
+ \paragraph{Mr. Why}
+ \kg was an exceptionally inquisitive child and was nicknamed Der Her Warnum(Mr. Why). He was enrolled in a protestant private school which were allowed to operate after evolution and reform of Austrian school system. He was an exceptional student, his main interests were sciences and languages. He was famous as someone who never made even a single mistake in his Latin tests.
+ One event from \kgs childhood that deserves a mention even in this short biography is that he had contracted rheumatic fever when he was around eight years old. Even though the disease itself didn't leave any lasting effects, \kg being a curious child learned about the possible side effects of the affliction and believed that had been left with side effects from the disease, despite Doctor's reassurances. This event would mark a major turning point in his life as a hypochondriac.  
+ One more thing that is worth noting is that like many other German's in Czechoslovakia  at that time he considered himself to be an Austrian exile living in Czechoslovakia. He was the only student in school that had known to have never spoken a word of Czech. This was symptomatic of his prejudice against Slavs who he considered to be of lower class.
+
+ \paragraph{Trip to Marienbad} 
+   Despite going to an expensive private school( considered to be the best in Austrian monarchy) , \gd would consider his time spent there pointless and of no real consequence. He would attribute his choice of profession to their family trip to Marienbad in 1921 where he read and discussed Goethe's color theory and his conflict with Newton.
+ \paragraph{Vienna} 
+   His matriculation at the University of Vienna in 1924 can be described as second phase of his life. It was here that he would meet one of his principal mentor Hahn, a scholar of exceptional breath.
+ \paragraph{} 
+   Mathematical logic which had mainly become a domain of philosophy stagnated from the time of Aristotle who had formalized  logic to syllogistic forms. Even though Gotfried Liebniz has visionary ideas about logic he made little progress towards realizing his utopian ideas. Next major breakthrough in the world of logic came from George Boole who recognized the analogies between mathematical operators plus and times to logical connectives ``and'' and ``or''.
+   By taking $1$ to represent truth and $0$ falsity the proposition ``Every X is Y'' – construed as ``Whatever thing is X is also Y '' – can, for example, be rendered by the equation $x(1 − y) = 0$, where the variables $x$ and $y$ are understood to take the value $1$ if the ``thing'' in question is $X$ or $Y$ , respectively, and the value $0$ otherwise.
+   Boole's system however had a limitation of not dealing with nested predicates.That limitation was later overcome, however, by Charles Sanders Peirce and Ernst Schröder, who built on Boole’s ideas to develop a far-reaching ``calculus of relatives'' based on a similar algebraic perspective.  Recognition of their importance came only belatedly, largely through the efforts of Bertrand Russell, who translated Frege’s ideas into a Peircian style of notation and brought them to the attention of the mathematical community. In doing so Russell discovered the famous paradox that bears his name. Russell discovered that Frege had unwittingly made possible the construction of a self-referential antinomy; for the predicate ``to be a predicate that cannot be predicated of itself''.
+   Such was the situation in logic at the beginning of the new century, just before the emergence of the paradoxes and the ensuing ``crisis in foundations.''Formalists, such as Hilbert, sought to justify mathematical theories by means of formal systems, within which symbols were manipulated according to precisely specified syntactic rules.In their book Hilbert and Ackermann singled out first-order logic as a tractable object for study, proved its syntactic incompleteness, and posed the question of its semantic completeness as an open problem.  He drew a sharp distinction between ``consistent'' theories and ``correct'' ones – an idea that seems to have suggested to \gd that even within classical mathematics formally undecidable statements might exist.
+ \paragraph{The Incompleteness Theorem}
+ Though there is no way to pinpoint when \gd first began work on his dissertation, internal evidence, together with the many library request slips he saved, some of his later statements, and Carnap's memoranda of conversations he had with him, shows that it was sometime in 1928 or early 1929.\\
+ In \gds view, a ``logical expression'' in \gds terminology is a well-formed first order formula without identity. An expression is ``refutable'' if its negation is provable, ``valid'' if it is true in every interpretation and ``satisfiable'' if it is true in some interpretation. The Completeness Theorem is stated as follows:
+ \textbf{Every valid logical expression is provable. Equivalently, every logical expression is either satisfiable or refutable.}
+ The degree of an expression or formula is the number of alternating blocks of quantifiers at the beginning of the formula, assumed to begin with universal quantifiers. \gd shows that if the completeness theorem holds for formulas of degree $k$ it must hold for formulas of degree $k + 1$. Thus the question of completeness reduces to formulas of degree 1.
+ \gd  essentially constructed a formula that claims that it is unprovable in a given formal system. If it were provable, it would be false, which contradicts the idea that in a consistent system, provable statements are always true. Thus there will always be at least one true but unprovable statement. 
  \paragraph {incompleteness theorem 2}
  For any formal effectively generated theory T including basic arithmetical truths and also certain truths about formal provability, if T includes a statement of its own consistency then T is inconsistent.\\
- \paragraph{Significance of Godels work}
- \\
- mathematics is not a finished object, as had been believed. It also implies that a computer can never be programmed to answer all mathematical questions.\\
- Gödel discovered that it is possible for a statement in a formal system not only to talk about itself, but also to deny its own theoremhood \\
- Godel numbers\\
+ In hindsight, the basic idea at the heart of the incompleteness theorem is rather simple. \gd essentially constructed a formula that claims that it is unprovable in a given formal system. If it were provable, it would be false, which contradicts the idea that in a consistent system, provable statements are always true. Thus there will always be at least one true but unprovable statement. That is, for any computably enumerable set of axioms for arithmetic (that is, a set that can in principle be printed out by an idealized computer with unlimited resources), there is a formula that obtains in arithmetic, but which is not provable in that system. To make this precise, however, \gd needed to produce a method to encode statements, proofs, and the concept of provability as natural numbers. He did this using a process known as \gd numbering.
+ \paragraph{Significance of \gds work}
+ \gds research on the completeness of formalized logic is what he is most celebrated for.  He developed upon Bertrand Russell and Alfred North Whitehead’s Principia Mathematica to establish the conclusion that the ancient idea of the ``axiomatic method'' contains in it inherent limitations when used in formalized systems.  His interest in this subject stemmed from a problem dealt with in Hilbert and Ackermann’s Grundz{\"u}ge der theoretische Logik, that all assertions should be provable in a formal system. 
 
+ \gds ``Incompleteness Theorem'' expressed the limits to the power of logical deduction.  The most succinct statement of this theorem is that any system powerful enough to form statements about itself is either inconsistent or incomplete. 
+ Basically, “\gd discovered that it is possible for a statement in a formal system not only to talk about itself, but also to deny its own theoremhood”
+ \paragraph{Princeton}
+ In 1933, \gd first traveled to the U.S., where he met Albert Einstein, who became a good friend.In 1934 \gd gave a series of lectures at the Institute for Advanced Study (IAS) in Princeton, New Jersey, entitled On undecidable propositions of formal mathematical systems. He returned to teaching in 1937. \gd became a permanent member of the Institute for Advanced Study at Princeton in 1946. Around this time he stopped publishing, though he continued to work. He became a full professor at the Institute in 1953 and an emeritus professor in 1976. The Axiom of Choice and the Continuum Hypothesis were \gds main focus while at Princeton, despite the fact that he had cut back his direct work on mathematical logic at this point in his life.\\
+ \gd was awarded (with Julian Schwinger) the first Albert Einstein Award in 1951, and was also awarded the National Medal of Science, in 1974.
+ In later life, \gd suffered periods of mental instability and illness. He had an obsessive fear of being poisoned; he would eat only food that his wife, Adele, prepared for him. Late in 1977, Adele was hospitalized for six months and could no longer prepare \gds food. In her absence, he refused to eat, eventually starving to death.
+
+\begin{thebibliography}{4}
+%
+\bibitem{Wp}
+\kg: Wikipedia. \textit{http://en.wikipedia.org/wiki/Kurt\_Godel}
+
+%
+\bibitem{Bk}
+John Dawson 
+{\emph{Logical Dilemmas: The Life and Work of \kg  }},
+Cambridge, 2012.
+%
+\bibitem{Sf}
+{\emph{\kg  }},\textit{http://plato.stanford.edu/entries/goedel/}
+Stanford encylopedia of philosophy.
+%
+\bibitem{Yt}
+\kg: Modern Dev. of the Foundations Of Mathematics In Light Of Philosophy.\\\textit{http://www.youtube.com/watch?v=cG7MyZtGSB0}
+
+\end{thebibliography}
 \end{document}
